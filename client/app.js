@@ -7,6 +7,8 @@
             'app.core',
             'app.home',
             'app.event',
-            'app.contact'
+            'app.contact',
+            'app.about',
+            'app.eventDetail'
         ]);
 })();

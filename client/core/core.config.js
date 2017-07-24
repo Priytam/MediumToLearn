@@ -25,6 +25,15 @@
             when('/about', {
                 templateUrl: 'about/about.html',
                 controller: 'AboutController as vm'
+            }).
+            when('/eventDetail/:id', {
+                templateUrl: 'eventDetail/eventDetail.html',
+                controller: 'EventDetailController as vm',
+                resolve: {
+                    event : function(EventService, $route) {
+                        return EventService.getEvent($route.current.params.id);
+                    }
+                }
             })
             .otherwise({
                 redirectTo: '/'

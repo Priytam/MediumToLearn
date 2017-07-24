@@ -15,7 +15,7 @@
         activate();
 
         function activate() {
-            EventService.getEventData().then(_gotEventData);
+            EventService.getEventsData().then(_gotEventData);
         }
 
         function _gotEventData(res) {
