@@ -15,7 +15,6 @@
              * 3rd Party modules
              */
             'angular-preload-image',
-            'ui.bootstrap',
-            'ui.carousel'
+            'ui.bootstrap'
         ]);
 })();
