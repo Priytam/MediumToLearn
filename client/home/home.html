@@ -1,0 +1,52 @@
+<div class="home-frame">
+    <div class="home-banner">
+        <div class="container inner">
+            <div class="row">
+              <div class="col-xs-4">
+                  <div style="height: 60px">
+                      <div uib-carousel active="1" interval="3000" no-wrap="false">
+                          <div uib-slide ng-repeat="slide in vm.slides track by slide.id" index="slide.id">
+                              <img ng-src="{{slide.image}}" style="margin:auto;">
+                              <div class="carousel-caption">
+                                  <h4>Slide {{slide.id}}</h4>
+                                  <p>{{slide.text}}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-xs-8">
+                    <h1>Welcome to <span>Maadhyam</span>.</h1>
+                    <h2>Madhyam means path, and we are creating a path for the poor children to success. </h2>
+                    <p>We provide digital education and basic communication skills to the poor and needy children. </p>
+                    <p>As we know in this growing world nobody can survive without computers and communication so
+                        we are helping the poor and needy people to be capable of surviving in this world of technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clearbanner"></div>
+    <div class="tutorials-title">
+        <div class="container">
+            Our Missions
+            <div class="hidden-xs share-buttons">
+                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15135403'></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="tutorials">
+            <li data-ng-repeat="mission in vm.missions track by $index">
+                <div class="media">
+                    <div class="media-left">
+                        <img ng-src="{{mission.banner}}"  class="media-object" style="width:150px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">{{mission.title}}</h3>
+                        <p>{{mission.description}}</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

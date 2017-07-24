@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maadhyam - A medium to learn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!-- build:css assets/css/styles.css -->
+    <link rel="stylesheet" href="style/main.css"/>
+    <link rel="stylesheet" href="style/animations.css" />
+    <link rel="stylesheet" href="home/home.css"/>
+    <link rel="stylesheet" href="events/event.css" />
+    <link rel="stylesheet" href="contact/contact.css" />
+    <link rel="stylesheet" href="about/about.css" />
+    <!-- endbuild -->
+</head>
+<body data-ng-app="app">
+
+<header id="site-header">
+    <div class="container">
+        <div class="pull-left logo">
+            MAADHYAM
+        </div>
+        <ul class="pull-right menu">
+            <li><a href="#/">HOME</a></li>
+            <li><a href="#/events">EVENTS</a></li>
+            <li><a href="#/contact">CONTACT US</a></li>
+            <li><a href="#/about">ABOUT US</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
+<section id="site-bar" data-ng-controller="BarController as bar">
+    <div class="container">
+        <h1>{{bar.data.title}}</h1>
+        <p>{{bar.data.description}}</p>
+    </div>
+    <div class="page-loader" data-ng-show="bar.data.loading"><div class="throbber"></div></div>
+</section>
+
+<section id="main">
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+</section>
+
+<!-- build:assets assets.min.js -->
+<!-- ASSETS -->
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+<script src="bower_components/angular-route/angular-route.min.js"></script>
+<script src="bower_components/angular-touch/angular-touch.min.js"></script>
+<script src="bower_components/angular-preload-image/angular-preload-image.min.js"></script>
+
+<!-- / -->
+<!-- endbuild -->
+
+<!-- build:js app.min.js -->
+
+
+<!-- MODULES -->
+<script src="app.js"></script>
+<!-- / -->
+
+<!-- Core -->
+<script src="core/core.module.js"></script>
+<script src="core/core.config.js"></script>
+<script src="core/core.service.js"></script>
+<script src="core/core.cntrl.js"></script>
+<!-- / -->
+
+<!-- home -->
+<script src="home/home.module.js"></script>
+<script src="home/home.cntrl.js"></script>
+<script src="home/home.service.js"></script>
+<!-- / -->
+
+<!-- event -->
+<script src="events/event.module.js"></script>
+<script src="events/event.cntrl.js"></script>
+<script src="events/event.service.js"></script>
+<!-- / -->
+
+<!-- contact -->
+<script src="contact/contact.module.js"></script>
+<script src="contact/contact.cntrl.js"></script>
+<!-- / -->
+
+<!-- contact -->
+<script src="about/about.module.js"></script>
+<script src="about/about.cntrl.js"></script>
+<!-- / -->
+
+
+<!-- inject:js -->
+<!-- endinject -->
+<!-- endbuild -->
+</body>
+</html>

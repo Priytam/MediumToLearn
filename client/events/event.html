@@ -1,0 +1,29 @@
+<div class="trending-results">
+    <div class="no-data" data-ng-if="vm.events.length == 0">There are no events available to display</div>
+    <ul class="list-of-shows">
+        <li class="col-xs-6 col-md-4 repeat-animation" data-ng-repeat="event in vm.events">
+            <div class="show-frame">
+                <ul class="genres">
+                    <li data-ng-repeat="tag in event.tags" class="animate-repeat" data-ng-style="{'background-color': 'rgba(59, 185, 187, ' + event.tags.length / $index / 5 + ')'}">{{tag}}</li>
+                </ul>
+                <img preload-image default-image="img/loading.jpg" fallback-image="img/fallback.jpg" ng-src="{{event.main_img}}" />
+                <div class="date label label-dark"><span class="icon icon-calendar"></span> {{event.date | date:'DD-MM-YYYY'}}</div>
+                <h2>{{event.name}}</h2>
+                <div class="inner">
+                    <ul class="info">
+                        <li class="col-xs-6 rating"><span class="icon icon-heart3"></span> {{event.vote}}</li>
+                        <li class="col-xs-6 country">
+                            <span class="icon icon-earth"></span>
+                            <span >{{event.location}}</span>
+                        </li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <div class="buttons">
+                        <a href="#/view/{{event.id}}" class="btn btn-info"><span class="icon icon-arrow-right7"></span> View</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+

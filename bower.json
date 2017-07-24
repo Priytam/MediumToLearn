@@ -1,0 +1,28 @@
+{
+  "name": "MediumToLearn",
+  "authors": [
+    "Priytam Jee Pandey <mrpjpandey@gmail.com>"
+  ],
+  "description": "NGO for LPU",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "angular-touch": "^1.6.5",
+    "angular-preload-image": "*",
+    "angular-resource": "^1.6.5",
+    "angular-cookies": "^1.6.5",
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7"
+  }
+}
