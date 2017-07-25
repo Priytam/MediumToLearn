@@ -1,8 +1,8 @@
-<div uib-carousel interval="3000"  active="0">
+<div uib-carousel interval="2000"  active="0">
     <div uib-slide ng-repeat="slide in vm.slides" index="$index">
         <img ng-src="{{slide.image}}" style="margin:auto;" height="350px" width="100%">
         <div class="carousel-caption">
-            <p>{{slide.text}}</p>
+            <h3 style="color: chartreuse">{{slide.text}}</h3>
         </div>
     </div>
 </div>
@@ -18,7 +18,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-check"></i> Path to Success</h4>
+                    <h4><i class="fa fa-fw fa-subway" style="color: orangered"></i> Path to Success</h4>
                 </div>
                 <div class="panel-body">
                     <p>
@@ -30,7 +30,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-gift"></i>Digital Education</h4>
+                    <h4><i class="fa fa-fw fa-book" style="color: greenyellow"></i>Digital Education</h4>
                 </div>
                 <div class="panel-body">
                     <p>
@@ -42,7 +42,7 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h4><i class="fa fa-fw fa-compass"></i>Technology</h4>
+                    <h4><i class="fa fa-fw fa-laptop" style="color: #c9302c"></i>Technology</h4>
                 </div>
                 <div class="panel-body">
                     <p>
@@ -65,36 +65,24 @@
                 <div class="pull-left">
                         <span class="fa-stack fa-2x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-hand-grab-o fa-stack-1x fa-inverse"></i>
                         </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service One</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading" style="color: white">Help</h4>
+                    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
                 </div>
             </div>
             <div class="media">
                 <div class="pull-left">
                         <span class="fa-stack fa-2x">
                               <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                              <i class="fa fa-pencil-square-o fa-stack-1x fa-inverse"></i>
                         </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Two</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
-                </div>
-            </div>
-            <div class="media">
-                <div class="pull-left">
-                        <span class="fa-stack fa-2x">
-                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
-                        </span>
-                </div>
-                <div class="media-body">
-                    <h4 class="media-heading">Service Three</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading" style="color: white">Educate</h4>
+                    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
                 </div>
             </div>
             <div class="media">
@@ -105,8 +93,20 @@
                         </span>
                 </div>
                 <div class="media-body">
-                    <h4 class="media-heading">Service Three</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                    <h4 class="media-heading" style="color: white">Support</h4>
+                    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-anchor fa-stack-1x fa-inverse"></i>
+                        </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading" style="color: white">Facility</h4>
+                    <p style="color: white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
-                <p>Copyright &copy; Madhyam(medium2learn) 2017</p>
+                <p>Copyright &copy; Madhyam (medium2learn) - 2017</p>
             </div>
         </div>
     </footer>

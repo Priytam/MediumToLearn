@@ -23,12 +23,24 @@
 
         function _returnSlideData() {
             return [{
-                image: 'img/abc.jpg',
-                text: 'Nice Image',
+                image: 'img/slide/slide1.jpg',
+                text: 'Let our future be full of joy, educate every girl and boy',
                 id: 0
             },{
-                image: 'img/abc.jpg',
-                text: 'Nice Image1',
+                image: 'img/slide/slide2.jpg',
+                text: 'For both female and male, education shouldn’t fail',
+                id: 1
+            },{
+                image: 'img/slide/slide3.jpg',
+                text: 'Our daughters: prepared for school today, prepared for society tomorrow',
+                id: 1
+            },{
+                image: 'img/slide/slide4.jpg',
+                text: 'Children are the future, teach them well and let them lead the way',
+                id: 1
+            }, {
+                image: 'img/slide/slide5.jpg',
+                text: 'Each one teach one',
                 id: 1
             }];
         }
