@@ -23,6 +23,7 @@
     "angular-resource": "^1.6.5",
     "angular-cookies": "^1.6.5",
     "angular-bootstrap": "^2.5.0",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
   }
 }

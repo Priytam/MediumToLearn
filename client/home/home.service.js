@@ -14,22 +14,22 @@
         return service;
 
         function getSlideData() {
-            return $timeout(_returnSlideData, 1000);
+            return $timeout(_returnSlideData, 100);
         }
 
         function getMissionData() {
-            return $timeout(_returnMissionData, 1000);
+            return $timeout(_returnMissionData, 100);
         }
 
         function _returnSlideData() {
             return [{
                 image: 'img/abc.jpg',
                 text: 'Nice Image',
-                id: 123
+                id: 0
             },{
                 image: 'img/abc.jpg',
                 text: 'Nice Image1',
-                id: 12
+                id: 1
             }];
         }
 

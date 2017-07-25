@@ -1,44 +1,129 @@
-<div class="home-frame">
-    <div class="home-banner">
-        <div class="container inner">
-            <div class="row">
-              <div class="col-xs-4">
-                  <div style="height: 60px">
-                      <img src="img/logo-m.jpg" style="margin-bottom: 5%" width="100%"/>
-                  </div>
-              </div>
-                <div class="col-xs-8">
-                    <h1>Welcome to <span>Maadhyam</span>.</h1>
-                    <h2>Madhyam means path, and we are creating a path for the poor children to success. </h2>
-                    <p>We provide digital education and basic communication skills to the poor and needy children. </p>
-                    <p>As we know in this growing world nobody can survive without computers and communication so
-                        we are helping the poor and needy people to be capable of surviving in this world of technology.</p>
+<div uib-carousel interval="3000"  active="0">
+    <div uib-slide ng-repeat="slide in vm.slides" index="$index">
+        <img ng-src="{{slide.image}}" style="margin:auto;" height="350px" width="100%">
+        <div class="carousel-caption">
+            <p>{{slide.text}}</p>
+        </div>
+    </div>
+</div>
+<!-- Page Content -->
+<div class="container">
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header" style="color: #00b3ee">
+                Welcome to Maadhyam.
+            </h1>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-check"></i> Path to Success</h4>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Maadhyam means path, and we are creating a path for the poor children to success.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-gift"></i>Digital Education</h4>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Maadhyam provides digital education and basic communication skills to the poor and needy children.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4><i class="fa fa-fw fa-compass"></i>Technology</h4>
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Maadhyam is helping the poor and needy people to be capable of surviving in this world of technology
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="clearbanner"></div>
-    <div class="tutorials-title">
-        <div class="container">
-            Our Missions
-            <div class="hidden-xs share-buttons">
-                <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='15135403'></div>
+    <!-- /.row -->
+
+    <!-- Features Section -->
+    <div class="row">
+        <h1 class="page-header" style="color: #00b3ee">
+            Our Mission
+        </h1>
+
+        <div class="col-md-6">
+            <div class="media">
+                <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-tree fa-stack-1x fa-inverse"></i>
+                        </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service One</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+                        </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Two</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                        </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Three</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="pull-left">
+                        <span class="fa-stack fa-2x">
+                              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                              <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+                        </span>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">Service Three</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo itaque ipsum sit harum.</p>
+                </div>
             </div>
         </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="img/333.jpg" alt="child">
+        </div>
     </div>
-    <div class="container">
-        <ul class="tutorials">
-            <li data-ng-repeat="mission in vm.missions track by $index">
-                <div class="media">
-                    <div class="media-left">
-                        <img ng-src="{{mission.banner}}"  class="media-object" style="width:150px">
-                    </div>
-                    <div class="media-body">
-                        <h3 class="media-heading">{{mission.title}}</h3>
-                        <p>{{mission.description}}</p>
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </div>
+    <!-- /.row -->
+
+    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright &copy; Madhyam(medium2learn) 2017</p>
+            </div>
+        </div>
+    </footer>
+
 </div>

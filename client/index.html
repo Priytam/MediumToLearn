@@ -1,62 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Maadhyam - A medium to learn</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- build:css assets/css/styles.css -->
-    <link rel="stylesheet" href="style/main.css"/>
-    <link rel="stylesheet" href="style/animations.css" />
-    <link rel="stylesheet" href="home/home.css"/>
-    <link rel="stylesheet" href="events/event.css" />
-    <link rel="stylesheet" href="contact/contact.css" />
-    <link rel="stylesheet" href="about/about.css" />
-    <link rel="stylesheet" href="eventDetail/eventDetail.css" />
-    <!-- endbuild -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Maadhyam - Medium to learn</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="style/main.css" rel="stylesheet">
+    <link href="contact/contact.css" rel="stylesheet">
+    <link href="eventDetail/eventDetail.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body data-ng-app="app">
 
-<header id="site-header">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="pull-left logo">
-           <a href="#/"> MAADHYAM </a>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">MAADHYAM</a>
         </div>
-        <ul class="pull-right menu">
-            <li><a href="#/">HOME</a></li>
-            <li><a href="#/events">EVENTS</a></li>
-            <li><a href="#/contact">CONTACT US</a></li>
-            <li><a href="#/about">ABOUT US</a></li>
-        </ul>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#/">Home</a>
+                </li>
+                <li>
+                    <a href="#/events">Events</a>
+                </li>
+                <li>
+                    <a href="#/contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#/about">About</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-</header>
+    <!-- /.container -->
+</nav>
 
-
-
-<section id="site-bar" data-ng-controller="BarController as bar">
-    <div class="container">
-        <h1>{{bar.data.title}}</h1>
-        <p>{{bar.data.description}}</p>
-    </div>
-    <div class="page-loader" data-ng-show="bar.data.loading"><div class="throbber"></div></div>
-</section>
-
-<section id="main">
-    <div class="container">
-        <ng-view></ng-view>
-    </div>
-</section>
+<div>
+    <ng-view></ng-view>
+</div>
 
 <!-- build:assets assets.min.js -->
 <!-- ASSETS -->
-<script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
 <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
 <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
 <script src="bower_components/angular-route/angular-route.min.js"></script>
 <script src="bower_components/angular-touch/angular-touch.min.js"></script>
 <script src="bower_components/angular-preload-image/angular-preload-image.min.js"></script>
-
+<script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+</script>
 <!-- / -->
 <!-- endbuild -->
 

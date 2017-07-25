@@ -14,11 +14,11 @@
         return service;
 
         function getEventsData() {
-            return $timeout(_returnEventData, 1000);
+            return $timeout(_returnEventData, 100);
         }
 
         function getEvent(id) {
-            return $timeout(_picEventData, 1000);
+            return $timeout(_picEventData, 100);
             function _picEventData() {
                 var eventArray = _returnEventData();
                 for (var i = 0; i < eventArray.length; i++) {
