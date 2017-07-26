@@ -36,11 +36,11 @@
             return [
                 {
                     pending : false,
-                    date: "13-04-2017",
+                    date: "14-03-2017",
                     main_img: 'img/event/one/3.jpeg',
                     id: 0,
                     name: "Educating the orphans",
-                    location: 'Punjab',
+                    location: 'Nari Nekaten Jalandhar',
                     overview: "This was our first step towards executing the dream " +
                     "of making the poor and needy educated. We went to a orphanage called" +
                     " Nari Niketan,there we found many children spending their lives in the " +
@@ -107,12 +107,12 @@
                     }]
                 },
                 {
-                    date: "13-04-2017",
+                    date: "25-05-2017",
                     pending : false,
                     main_img: 'img/event/two/3.jpeg',
                     id: 1,
                     name: "Distributing clothes",
-                    location: 'Punjab',
+                    location: 'JAlANDHAR CITY RAILWAY STATION',
                     overview: "Madhyam not only believes in educating the poor children but also helping the poor people." +
                     " Our team went to Jalandhar City Railway Station to donate clothes to the poor and needy people there." +
                     "We found many people who were not having clothes to wear,food to eat.We just want to help them to " +
@@ -188,11 +188,11 @@
                 },
                 {
                     pending : true,
-                    date: "13-04-2017",
+                    date: "25-8-2017",
                     main_img: 'img/event/three/1.jpeg',
                     id: 2,
                     name: "Super Six Cricket Match",
-                    location: 'Punjab',
+                    location: 'LPU',
                     overview: "Pending",
                     banner : 'img/event/three/1.jpeg',
                     pictures: [{
