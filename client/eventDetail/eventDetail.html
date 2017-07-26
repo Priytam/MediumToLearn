@@ -1,34 +1,26 @@
-<div class="view-banner"
-     preload-bg-image="{{vm.event.banner}}"
-     default-image="img/shattered.png"></div>
+<div class="view-banner" preload-bg-image="{{vm.event.banner}}"></div>
 <div class="view-title">
     <div class="container">
-        {{vm.event.name}} ({{vm.event.date | date:'YYYY'}})
+         <i class="fa fa-calendar"></i>{{vm.event.date | date:'YYYY'}}
         <ul class="pull-right">
-            <li><span class="icon icon-heart3"></span> {{vm.event.vote}}</li>
-            <li><span class="icon icon-tags"></span> <span data-ng-repeat="tag in vm.event.tags">{{tag}}{{$last ? '' : ', '}}</span> </li>
-            <li><span class="icon icon-info2"></span> {{vm.event.status}}</li>
+            <li><span class="fa fa-location-arrow"></span> {{vm.event.location}}</li>
         </ul>
     </div>
 </div>
 <div class="view-container">
-    <h2>Show Summary</h2>
+    <h2>{{vm.event.name}}</h2>
     <div class="view-section view-top" data-ng-switch="vm.event.overview != null">
-        <div class="poster"><img preload-image
-                                 default-image="img/loading.jpg"
-                                 fallback-image="img/fallback-thin.jpg"
-                                 ng-src="{{vm.event.main_img}}" /></div>
+        <div class="poster"><img ng-src="{{vm.event.main_img}}"/></div>
         <p data-ng-switch-when="true">{{vm.event.overview}}</p>
-        <p data-ng-switch-when="false" class="no-overview">No overview is available for this event</p>
+        <p data-ng-switch-when="false" class="no-overview">
+            No overview is available for this event</p>
         <div class="clearfix"></div>
     </div>
     <h2>Gallery</h2>
     <div class="view-section">
         <ul class="view-list">
             <li data-ng-repeat="pic in vm.event.pictures">
-                <img preload-image default-image="img/loading.jpg"
-                     fallback-image="img/fallback-thin.jpg"
-                     data-ng-src="{{pic.url}}" />
+                <img data-ng-src="{{pic.url}}" />
                 <div class="item-info">
                     <div class="col-md-2">{{pic.name}}</div>
                     <div class="col-md-10">{{pic.heart}}</div>
@@ -46,8 +38,8 @@
                      fallback-image="img/fallback-thin.jpg"
                      data-ng-src="{{member.url}}" />
                 <div class="item-info">
-                    {{member.name}} as <br />
-                    <strong>{{member.position}}</strong>
+                    {{member.name}} <br/>
+                    <strong><code>{{member.position}}</code></strong>
                 </div>
             </li>
         </ul>

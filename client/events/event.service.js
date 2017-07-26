@@ -35,195 +35,210 @@
         function _returnEventData() {
             return [
                 {
+                    pending : false,
                     date: "13-04-2017",
-                    tags: ['Learning', 'Phase1'],
-                    main_img: 'img/abc.jpg',
-                    id: 1399,
-                    name: "Event One",
+                    main_img: 'img/event/one/3.jpeg',
+                    id: 0,
+                    name: "Educating the orphans",
                     location: 'Punjab',
-                    overview: "Seven noble families fight for control of the mythical land of Westeros." +
-                    " Friction between the houses leads to full-scale war. All while a very ancient evil" +
-                    " awakens in the farthest north. Amidst the war, a neglected military order of misfits, " +
-                    "the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
-                    vote: 8.06,
-                    banner : 'img/abc.jpg',
+                    overview: "This was our first step towards executing the dream " +
+                    "of making the poor and needy educated. We went to a orphanage called" +
+                    " Nari Niketan,there we found many children spending their lives in the " +
+                    "orphanage as they were not able to study. They really wanted to be educated " +
+                    "and be successful in life so we started our journey from Nari Niketan educating the " +
+                    "children there. This was our first step toward success of making the world better.",
+                    banner : 'img/event/one/5.jpeg',
                     pictures: [{
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/one/1.jpeg',
+                        name: 'Educating the orphans'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/one/2.jpeg',
+                        name: 'Educating the orphans'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/one/3.jpeg',
+                        name: 'Educating the orphans'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/one/4.jpeg',
+                        name: 'Educating the orphans'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/one/5.jpeg',
+                        name: 'Educating the orphans'
                     }],
                     members: [{
-                        url: 'img/abc.jpg',
+                        url: 'img/team/raja.jpeg',
                         name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        position: 'CEO'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/veena.jpeg',
+                        name: 'Veena',
+                        position: 'Students Affairs Head'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shivam.jpeg',
+                        name: 'Shivam Verma',
+                        position: 'Vice President'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shubham.jpeg',
+                        name: 'Shubham Kumar',
+                        position: 'Co-Ordinator'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/bhoj.jpeg',
+                        name: 'Bhojanala Manjunath',
+                        position: 'Treasurer'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/rinki.jpeg',
+                        name: 'Rinki Shah',
+                        position: 'President'
+                    }, {
+                        url: 'img/team/udayan.jpeg',
+                        name: 'Udayan Karmakar',
+                        position: 'Marketing Head'
+                    }, {
+                        url: 'img/team/uttam.jpeg',
+                        name: 'Uttam Dutta',
+                        position: 'Event Manager'
+                    }, {
+                        url: 'img/team/aman.jpeg',
+                        name: 'Aman Padwar',
+                        position: 'Accountant'
+                    }, {
+                        url: 'img/team/prem.jpeg',
+                        name: 'Prem',
+                        position: 'Outsourcing Head'
                     }]
                 },
                 {
                     date: "13-04-2017",
-                    tags: ['Learning', 'Phase1'],
-                    main_img: 'img/abc.jpg',
-                    id: 199,
-                    name: "Game of Thrones",
+                    pending : false,
+                    main_img: 'img/event/two/3.jpeg',
+                    id: 1,
+                    name: "Distributing clothes",
                     location: 'Punjab',
-                    overview: "Seven noble families fight for control of the mythical land of Westeros." +
-                    " Friction between the houses leads to full-scale war. All while a very ancient evil" +
-                    " awakens in the farthest north. Amidst the war, a neglected military order of misfits, " +
-                    "the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+                    overview: "Madhyam not only believes in educating the poor children but also helping the poor people." +
+                    " Our team went to Jalandhar City Railway Station to donate clothes to the poor and needy people there." +
+                    "We found many people who were not having clothes to wear,food to eat.We just want to help them to " +
+                    "survive in this world.Our moto is not only to see the world educated but also to see the world developed.",
                     vote: 8.06,
-                    banner : 'img/abc.jpg',
+                    banner : 'img/event/two/1.jpeg',
                     pictures: [{
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/1.jpeg',
+                        name: 'Distributing clothes'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/2.jpeg',
+                        name: 'Distributing clothes'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/3.jpeg',
+                        name: 'Distributing clothes'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/4.jpeg',
+                        name: 'Distributing clothes'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/5.jpeg',
+                        name: 'Distributing clothes'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/two/6.jpeg',
+                        name: 'Distributing clothes'
+                    }, {
+                        url: 'img/event/two/7.jpeg',
+                        name: 'Distributing clothes'
+                    },{
+                        url: 'img/event/two/8.jpeg',
+                        name: 'Distributing clothes'
                     }],
                     members: [{
-                        url: 'img/abc.jpg',
+                        url: 'img/team/raja.jpeg',
                         name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        position: 'CEO'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/veena.jpeg',
+                        name: 'Veena',
+                        position: 'Students Affairs Head'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shivam.jpeg',
+                        name: 'Shivam Verma',
+                        position: 'Vice President'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shubham.jpeg',
+                        name: 'Shubham Kumar',
+                        position: 'Co-Ordinator'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/bhoj.jpeg',
+                        name: 'Bhojanala Manjunath',
+                        position: 'Treasurer'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/rinki.jpeg',
+                        name: 'Rinki Shah',
+                        position: 'President'
+                    }, {
+                        url: 'img/team/udayan.jpeg',
+                        name: 'Udayan Karmakar',
+                        position: 'Marketing Head'
+                    }, {
+                        url: 'img/team/uttam.jpeg',
+                        name: 'Uttam Dutta',
+                        position: 'Event Manager'
+                    }, {
+                        url: 'img/team/aman.jpeg',
+                        name: 'Aman Padwar',
+                        position: 'Accountant'
+                    }, {
+                        url: 'img/team/prem.jpeg',
+                        name: 'Prem',
+                        position: 'Outsourcing Head'
                     }]
                 },
                 {
+                    pending : true,
                     date: "13-04-2017",
-                    tags: ['Learning', 'Phase1'],
-                    main_img: 'img/abc.jpg',
-                    id: 13,
-                    name: "Game of Thrones",
+                    main_img: 'img/event/three/1.jpeg',
+                    id: 2,
+                    name: "Super Six Cricket Match",
                     location: 'Punjab',
-                    overview: "Seven noble families fight for control of the mythical land of Westeros." +
-                    " Friction between the houses leads to full-scale war. All while a very ancient evil" +
-                    " awakens in the farthest north. Amidst the war, a neglected military order of misfits, " +
-                    "the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
-                    vote: 8.06,
-                    banner : 'img/abc.jpg',
+                    overview: "Pending",
+                    banner : 'img/event/three/1.jpeg',
                     pictures: [{
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
-                    }, {
-                        url: 'img/abc.jpg',
-                        name: 'dummy',
-                        heart: 5
+                        url: 'img/event/three/1.jpeg',
+                        name: 'Super Six Cricket Match'
                     }],
                     members: [{
-                        url: 'img/abc.jpg',
+                        url: 'img/team/raja.jpeg',
                         name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        position: 'CEO'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/veena.jpeg',
+                        name: 'Veena',
+                        position: 'Students Affairs Head'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shivam.jpeg',
+                        name: 'Shivam Verma',
+                        position: 'Vice President'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/shubham.jpeg',
+                        name: 'Shubham Kumar',
+                        position: 'Co-Ordinator'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/bhoj.jpeg',
+                        name: 'Bhojanala Manjunath',
+                        position: 'Treasurer'
                     }, {
-                        url: 'img/abc.jpg',
-                        name: 'Raja Ji Pandey',
-                        position: 'Team'
+                        url: 'img/team/rinki.jpeg',
+                        name: 'Rinki Shah',
+                        position: 'President'
+                    }, {
+                        url: 'img/team/udayan.jpeg',
+                        name: 'Udayan Karmakar',
+                        position: 'Marketing Head'
+                    }, {
+                        url: 'img/team/uttam.jpeg',
+                        name: 'Uttam Dutta',
+                        position: 'Event Manager'
+                    }, {
+                        url: 'img/team/aman.jpeg',
+                        name: 'Aman Padwar',
+                        position: 'Accountant'
+                    }, {
+                        url: 'img/team/prem.jpeg',
+                        name: 'Prem',
+                        position: 'Outsourcing Head'
                     }]
                 }
             ];
