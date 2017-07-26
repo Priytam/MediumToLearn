@@ -14,11 +14,11 @@
         return service;
 
         function getSlideData() {
-            return $timeout(_returnSlideData, 100);
+            return $timeout(_returnSlideData, 5);
         }
 
         function getMissionData() {
-            return $timeout(_returnMissionData, 100);
+            return $timeout(_returnMissionData, 5);
         }
 
         function _returnSlideData() {
