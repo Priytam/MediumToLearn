@@ -5,36 +5,41 @@
                 <h1 style="color:#fff;">Write Your Message</h1>
                 <div class="titleline-icon"></div>
                 <p style="color:#fff;">Please type your query and send us back </p>
+                <h2 style="color: white" ng-if="vm.sending"> Sending mail ... </h2>
+                <h2 style="color: white" ng-if="vm.sucess"><i class="fa fa-mail-forward" style="color: white"></i> Mail sent </h2>
+                <h2 style="color: white" ng-if="vm.error"><i class="fa fa-ban" style="color: darkred"></i> Error while sending mail </h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-8">
-                <form name="sentMessage" id="contactForm" novalidate="">
+                <form name="sentMessage" id="contactForm">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" ng-model="vm.query.name" placeholder="Your Name *" id="name" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                <input type="email" class="form-control" ng-model="vm.query.email" placeholder="Your Email *" id="email" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                <input type="tel" class="form-control" ng-model="vm.query.phone" placeholder="Your Phone *" id="phone" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" ng-model="vm.query.text" placeholder="Your Message *" id="message" required>
+
+                                </textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" class="btn btn-xl get">Send Message</button>
+                            <button type="submit" ng-click="vm.sendMail()" class="btn btn-xl get">Send Message</button>
                         </div>
                     </div>
                 </form>
