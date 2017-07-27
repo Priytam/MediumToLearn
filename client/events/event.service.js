@@ -39,14 +39,14 @@
                     date: "14-03-2017",
                     main_img: 'img/event/one/3.jpeg',
                     id: 0,
-                    name: "Educating the orphans",
-                    location: 'Nari Nekaten Jalandhar',
+                    name: "Educating The Orphans",
+                    location: 'Nari Niketan Jalandhar',
                     overview: "This was our first step towards executing the dream " +
-                    "of making the poor and needy educated. We went to a orphanage called" +
-                    " Nari Niketan,there we found many children spending their lives in the " +
-                    "orphanage as they were not able to study. They really wanted to be educated " +
-                    "and be successful in life so we started our journey from Nari Niketan educating the " +
-                    "children there. This was our first step toward success of making the world better.",
+                    "of making the poor and needy educated. We went to an orphanage called" +
+                    " Nari Niketan. There we found many children spending their lives in the " +
+                    "orphanage as they did not have opportunity . They really wanted to learn " +
+                    "and achieve something big in their lives. So we started our journey from Nari Niketan educating the " +
+                    "children there. This was our first step towards making the world better.",
                     banner : 'img/event/one/5.jpeg',
                     pictures: [{
                         url: 'img/event/one/1.jpeg',
@@ -111,12 +111,12 @@
                     pending : false,
                     main_img: 'img/event/two/3.jpeg',
                     id: 1,
-                    name: "Distributing clothes",
-                    location: 'JAlANDHAR CITY RAILWAY STATION',
+                    name: "Distributing Clothes",
+                    location: 'Jalandhar City Railway Station',
                     overview: "Madhyam not only believes in educating the poor children but also helping the poor people." +
-                    " Our team went to Jalandhar City Railway Station to donate clothes to the poor and needy people there." +
-                    "We found many people who were not having clothes to wear,food to eat.We just want to help them to " +
-                    "survive in this world.Our moto is not only to see the world educated but also to see the world developed.",
+                    " Our team went to Jalandhar City Railway Station to donate clothes to the poor and needy people." +
+                    " We found many people who were not having clothes to wear, food to eat. We wish to help them" +
+                    " survive in this world. Our motto is not only to see the world educated but also to see the world developed.",
                     vote: 8.06,
                     banner : 'img/event/two/1.jpeg',
                     pictures: [{

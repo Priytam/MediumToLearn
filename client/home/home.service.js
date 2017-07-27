@@ -28,20 +28,20 @@
                 id: 0
             },{
                 image: 'img/slide/slide2.jpg',
-                text: 'For both female and male, education shouldn’t fail',
+                text: 'For both female and male children, education shouldn’t fail',
                 id: 1
             },{
                 image: 'img/slide/slide3.jpg',
-                text: 'Our daughters: prepared for school today, prepared for society tomorrow',
-                id: 1
+                text: 'Our daughters, prepared for school today, prepared for society tomorrow',
+                id: 2
             },{
                 image: 'img/slide/slide4.jpg',
                 text: 'Children are the future, teach them well and let them lead the way',
-                id: 1
+                id: 3
             }, {
                 image: 'img/slide/slide5.jpg',
                 text: 'Each one teach one',
-                id: 1
+                id: 4
             }];
         }
 
