@@ -5,9 +5,6 @@
                 <h1 style="color:#fff;">Write Your Message</h1>
                 <div class="titleline-icon"></div>
                 <p style="color:#fff;">Please type your query and send us back </p>
-                <h2 style="color: white" ng-if="vm.sending"> Sending mail ... </h2>
-                <h2 style="color: white" ng-if="vm.sucess"><i class="fa fa-mail-forward" style="color: white"></i> Mail sent </h2>
-                <h2 style="color: white" ng-if="vm.error"><i class="fa fa-ban" style="color: darkred"></i> Error while sending mail </h2>
             </div>
         </div>
         <div class="row">
@@ -39,7 +36,10 @@
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button type="submit" ng-click="vm.sendMail()" class="btn btn-xl get">Send Message</button>
+                            <button type="submit" ng-if="!vm.sending" ng-click="vm.sendMail()" class="btn btn-xl get"><i class="fa fa-send-o" style="color: orange;"></i> &nbsp;&nbsp;Send Message</button>
+                            <button type="submit" ng-if="vm.sending" class="btn btn-xl get"> <i class="fa fa-spinner fa-spin" style="color: green;"></i> &nbsp;&nbsp; Sending mail ...</button>
+                            <span style="color: white" ng-if="vm.sucess"><i class="fa fa-mail-forward" style="color: white"></i> Mail sent </span>
+                            <span style="color: white" ng-if="vm.error"><i class="fa fa-" style="color: darkred"></i>Error while sending mail </span>
                         </div>
                     </div>
                 </form>

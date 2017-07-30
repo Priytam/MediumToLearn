@@ -27,10 +27,12 @@ console.log("Listening on port: " + port);
 function _sendMail(req, res) {
     var body = req.body;
     var transporter = nodemailer.createTransport({
-        service: 'Gmail',
+        host: 'smtp.gmail.com',
+        port: 587,
+        secure: false,
         auth: {
             user: 'madhyam.mediumtolearn@gmail.com',
-            pass: 'roshni@9'
+            pass: 'Roshni@2'
         }
     });
 
