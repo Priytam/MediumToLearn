@@ -6,12 +6,22 @@
         .module('app.event')
         .factory('EventService', EventService);
 
-    function EventService($timeout) {
+    function EventService($timeout, $http) {
         var service = {
             getEventsData: getEventsData,
-            getEvent: getEvent
+            getEvent: getEvent,
+            getLike : getLike,
+            like : like
         };
         return service;
+
+        function getLike() {
+            return $http.get('/like');
+        }
+
+        function like(name) {
+            return $http.post('/like', {name : name});
+        }
 
         function getEventsData() {
             return $timeout(_returnEventData, 5);
@@ -29,8 +39,6 @@
                 return {};
             }
         }
-
-
 
         function _returnEventData() {
             return [

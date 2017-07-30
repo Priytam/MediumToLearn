@@ -5,7 +5,8 @@
     'use strict';
 
     angular.module('app.core')
-        .config(config);
+        .config(config)
+        .constant('_',  window._);
 
     function config ($routeProvider, $locationProvider) {
         $locationProvider.hashPrefix('');

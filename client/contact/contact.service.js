@@ -12,7 +12,7 @@
         };
 
         function sendMail(data) {
-            return $http.post('/sendMail', data);
+            return $http.post('/contact/mail', data);
         }
     }
 })();

@@ -4,14 +4,20 @@
         <div class="col-lg-12">
             <h2 class="page-header" style="color: #00b3ee">Event List</h2>
         </div>
-        <div class="col-md-4 col-sm-12 text-center" data-ng-repeat="event in vm.events">
+        <div class="col-md-4 col-sm-12" data-ng-repeat="event in vm.events">
             <div class="thumbnail">
                 <img class="img-responsive" ng-src="{{event.main_img}}" alt="anjali" style="width:450px;height:250px;">
                 <div class="caption">
-                    <h3>{{event.name}}<br>
-                        <small>{{event.date}}</small>
-                    </h3>
-                    <a ng-disabled="event.pending" href="#/eventDetail/{{event.id}}" class="btn btn-info"><span class="icon icon-arrow-right7"></span> View</a>
+                    <h3>{{event.name}}</h3>
+                    <hr>
+                    <small><i class="fa fa-clock-o"></i> &nbsp;&nbsp;{{event.date}}</small>
+                    <small class="pull-right"><i class="fa fa-thumbs-o-up" style="color: blue"></i> &nbsp;&nbsp;
+                        {{vm.likes[event.name].length}}</small>
+                    <hr>
+                    <a ng-disabled="event.pending" href="#/eventDetail/{{event.id}}" class="btn btn-info">
+                        <span class="fa fa-arrow-circle-o-right"></span> View</a>
+                    <a ng-disabled="event.pending" href ng-click="vm.addLike(event.name)" class="btn btn-info pull-right">
+                        <span class="fa fa-thumbs-o-up"></span> Like</a>
                 </div>
             </div>
         </div>
